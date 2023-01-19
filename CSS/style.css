@@ -1,0 +1,226 @@
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: main;
+}
+
+.item-c {
+    grid-area: skills;
+}
+
+.item-d {
+    grid-area: casestudy1;
+}
+
+.item-e {
+    grid-area: casestudy2;
+}
+
+.item-f {
+    grid-area: casestudy3;
+}
+
+.item-g {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 12, 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header header header header header header header header header "
+        ". . . . main main main main . . . ."
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.nav {
+    display: flex;
+    background-color: skyblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.header {}
+
+.inline-block {
+    display: inline-block;
+}
+
+.left {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: arial;
+}
+
+.home,
+.about,
+.portfolio {
+    padding: 30px;
+}
+
+.contactme {
+    width: 10em;
+    height: 5ex;
+    background-color: gold;
+    border: 2px solid firebrick;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.contactme:hover {
+    background-color: bisque;
+}
+
+.right {}
+
+.resume {
+    width: 10em;
+    height: 5ex;
+    background-color: gold;
+    border: 2px solid firebrick;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.resume:hover {
+    background-color: bisque;
+}
+
+.welcometext {
+    text-align: center;
+}
+
+#welcome {
+    margin-top: 50px;
+}
+
+#main-title {
+    margin-top: 100px;
+}
+
+.skills {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: DodgerBlue;
+}
+
+.titles {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.column {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.casestudy1,
+.casestudy2,
+.casestudy3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.casestudy1 {
+    background-image: url();
+}
+
+.casestudy2 {
+    background-image: url();
+}
+
+.casestudy3 {
+    background-image: url();
+}
+
+.text {
+    background: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+
+.text p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    height: 100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 12, 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header header header header"
+            ". main main main main . "
+            "footer footer footer footer footer footer";
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    ...
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    ...
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    ...
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    ...
+}
